@@ -1,3 +1,25 @@
-* {
-    box-sizing: border-box;
+footer {
+  width: 100%;
+  max-height: 130vh;
 }
+footer div {
+  background-color: black;
+  width: inherit;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+footer div .first_h {
+  color: white;
+}
+footer div .search {
+  display: block;
+  align-items: center;
+}
+footer div .search input, footer div .search button {
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

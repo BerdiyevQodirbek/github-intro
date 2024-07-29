@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    max-height: 130vh;
+   
+    div{
+        background-color: black;
+        width: inherit;
+        height: 80px;
+        display: flex;
+        align-items: center;
+      
+        .first_h{
+            color: white;
+          
+        }
+        .search{
+            display: block;
+            align-items: center;
+            input{
+                height: 20px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }
+            button{
+                @extend input
+            }
+        }
+    }
+}

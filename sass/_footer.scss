@@ -1,29 +1,70 @@
 footer{
     width: 100%;
-    max-height: 130vh;
+   min-height: 20vb ;
+    border: 1px solid gray;
+    position: relative;
+           top: 10vh;
+background-color: rgb(247, 240, 240) ;
    
-    div{
+    .about{
         background-color: black;
-        width: inherit;
-        height: 80px;
+        width: 80%;
+       border: 2px solid white;
+       border-radius: 15px;
         display: flex;
         align-items: center;
+        height: 120px;
+         position: absolute;
+        bottom: 40vh;
+       left: 14vh;
+       justify-content: space-around;
+        
+       
       
         .first_h{
             color: white;
+            text-align: center;
           
         }
         .search{
-            display: block;
+             flex-direction: column;
+             gap: 20px;
             align-items: center;
-            input{
-                height: 20px;
+        input{
+                height: 30px;
                 border: 1px solid white;
-                border-radius: 10px;
+                border-radius: 15px;
+                width: 200px;
+                flex-direction: column;
             }
             button{
                 @extend input
             }
         }
+    }
+   
+    .title{
+        display: flex;
+        padding: 20px;
+        justify-content: space-evenly;
+        div{
+            display: block;
+            color: black;
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color: gray;
+            }
+        }
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        p a{
+            text-decoration: none;
+            color: gray;
+        }
+       
     }
 }

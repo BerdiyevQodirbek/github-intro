@@ -1,25 +1,62 @@
 footer {
   width: 100%;
-  max-height: 130vh;
+  min-height: 20vb;
+  border: 1px solid gray;
+  position: relative;
+  top: 10vh;
+  background-color: rgb(247, 240, 240);
 }
-footer div {
+footer .about {
   background-color: black;
-  width: inherit;
-  height: 80px;
+  width: 80%;
+  border: 2px solid white;
+  border-radius: 15px;
   display: flex;
   align-items: center;
+  height: 120px;
+  position: absolute;
+  bottom: 40vh;
+  left: 14vh;
+  justify-content: space-around;
 }
-footer div .first_h {
+footer .about .first_h {
   color: white;
+  text-align: center;
 }
-footer div .search {
-  display: block;
+footer .about .search {
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
 }
-footer div .search input, footer div .search button {
-  height: 20px;
+footer .about .search input, footer .about .search button {
+  height: 30px;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 15px;
+  width: 200px;
+  flex-direction: column;
+}
+footer .title {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+footer .title div {
+  display: block;
+  color: black;
+  padding: 10px;
+}
+footer .title div a {
+  text-decoration: none;
+  color: gray;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+footer section p a {
+  text-decoration: none;
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category</title>
-  <link rel="icon" href="./imgs/icon-logo.png">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+    <link rel="icon" href="./imgs/icon-logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header></header>
+    <hr/>
+    <nav>
+      <div class="nav">
+        <a href="">Home</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="">Casual</a>
+      </div>
+    </nav>
+    <main>
+      <div class="main">
+        <div class="filters">
+          <div class="f-intro">
+            <h3>Filters</h3>
+            <i class="fa-solid fa-filter" style='color: #00000066;'></i>
+          </div>
+          <hr/>
+          <div class="f-types">
+            <div id="f-type">
+              <p>T-Shirts</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Shorts</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Shirts</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Hoodie</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Jeans</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-price">
+            <div class="f-price-h">
+              <h3>Price</h3>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-price_range">
+              <input type="range" min="0" max="125" value="50$" id='min-range'/>
+              <input type="range" min="125" max="250" value="200$" id='max-range'/>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-color">
+            <div class="f-color-h">
+              <h3>Color</h3>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-colors">
+              <div id="f-color" style='background-color: #00C12B;'></div>
+              <div id="f-color" style='background-color: #F50606;'></div>
+              <div id="f-color" style='background-color: #F5DD06;'></div>
+              <div id="f-color" style='background-color: #F57906;'></div>
+              <div id="f-color" style='background-color: #06CAF5;'></div>
+              <div id="f-color" style='background-color: #063AF5;'></div>
+              <div id="f-color" style='background-color: #7D06F5;'></div>
+              <div id="f-color" style='background-color: #F506A4;'></div>
+              <div id="f-color" style='background-color: #FFFFFF;'></div>
+              <div id="f-color" style='background-color: #000000;'></div>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-size">
+            <div class="f-size-h">
+              <h3>Size</h3>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-sizes" style='justify-content: flex-start;'>
+              <button style='width: 96px;'>XX-Small</button>
+              <button style='width: 88px;'>X-Small</button>
+              <button style='width: 74px;'>Small</button>
+              <button style='width: 90px;'>Medium</button>
+              <button style='width: 76px;'>Large</button>
+              <button style='width: 89px;'>X-Large</button>
+              <button style='width: 98px;'>XX-Large</button>
+              <button style='width: 97px;'>3X-Large</button>
+              <button style='width: 98px;'>4x-Large</button>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-dress_style">
+            <div class="f-dress_style-h">
+              <h3>Dress Style</h3>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-dress_styles">
+              <div id="f-type">
+                <p>Casual</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div id="f-type">
+                <p>Formal</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div id="f-type">
+                <p>Party</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div id="f-type">
+                <p>Gym</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+          <button id='f-btn'>Apply Filter</button>
+        </div>
+        <div class="casual"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer"></div>
+    </footer>
+  </body>
 </html>

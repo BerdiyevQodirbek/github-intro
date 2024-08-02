@@ -27,7 +27,7 @@ header, nav, main, footer {
 }
 .filters {
   width: 295px;
-  height: 1220px;
+  height: 1120px;
   border: 1px solid #0000001A;
   border-radius: 20px;
   display: flex;
@@ -44,7 +44,7 @@ header, nav, main, footer {
   align-items: center;
   gap: 1rem;
 }
-.f-intro, #f-type, .f-price-h, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h {
+.f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h {
   width: 247px;
   display: flex;
   flex-direction: row;
@@ -58,20 +58,59 @@ header, nav, main, footer {
 #f-color {
   width: 37px;
   height: 37px;
-  border: 1px solid #00000033;
+  border: 2px solid #00000033;
   border-radius: 50%;
+  text-align: center;
+  align-content: center;
 }
-.f-sizes button {
+#f-color i {
+  display: none;
+  color: #ffffff;
+}
+#f-color:hover i {
+  display: block;
+  transition: 0.5s ease;
+}
+#f-size {
   height: 39px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
+}
+#f-size:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.5s ease;
 }
 .f-price_range {
   position: relative;
   width: 247px;
-  height: 90px;
+  height: 43px;
+}
+#min-range, #max-range {
+  width: 120px;
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#min-range::-webkit-slider-thumb, #max-range::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: #000000;
+}
+#min-range::-moz-range-track, #max-range::-moz-range-track {
+  width: 120px;
+  height: 6px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 20px;
 }
 #min-range {
-  position: absolute;
+  transform: skewX('180deg');
+}
+#max-range {
+  left: 120px;
 }
 .filters button {
   border: none;
@@ -82,7 +121,12 @@ header, nav, main, footer {
   width: 247px;
   height: 48px;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+#f-btn:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+  transition: 0.5s ease;
 }
 .filters hr {
   width: 247px;

@@ -1,9 +1,9 @@
 footer{
     width: 100%;
-   min-height: 20vb ;
+     height: 350px ;
     border: 1px solid gray;
     position: relative;
-           top: 10vh;
+     top: 2567px;
 background-color: rgb(247, 240, 240) ;
    
     .about{
@@ -14,11 +14,10 @@ background-color: rgb(247, 240, 240) ;
         display: flex;
         align-items: center;
         height: 120px;
-         position: absolute;
-        bottom: 40vh;
-       left: 14vh;
+        bottom: 310px;
+        left: 130px;
        justify-content: space-around;
-        
+        position: absolute;
        
       
         .first_h{
@@ -30,6 +29,7 @@ background-color: rgb(247, 240, 240) ;
              flex-direction: column;
              gap: 20px;
             align-items: center;
+            display: flex;
         input{
                 height: 30px;
                 border: 1px solid white;

@@ -1,9 +1,9 @@
 footer {
   width: 100%;
-  min-height: 20vb;
+  height: 350px;
   border: 1px solid gray;
   position: relative;
-  top: 10vh;
+  top: 2567px;
   background-color: rgb(247, 240, 240);
 }
 footer .about {
@@ -14,10 +14,10 @@ footer .about {
   display: flex;
   align-items: center;
   height: 120px;
-  position: absolute;
-  bottom: 40vh;
-  left: 14vh;
+  bottom: 310px;
+  left: 130px;
   justify-content: space-around;
+  position: absolute;
 }
 footer .about .first_h {
   color: white;
@@ -27,6 +27,7 @@ footer .about .search {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  display: flex;
 }
 footer .about .search input, footer .about .search button {
   height: 30px;
@@ -57,6 +58,115 @@ footer section {
 footer section p a {
   text-decoration: none;
   color: gray;
+}
+
+main {
+  padding: 10px;
+}
+main .links {
+  padding: 10px;
+  gap: 6px;
+}
+main .links a {
+  text-decoration: none;
+  color: gray;
+}
+main .links a:hover {
+  color: black;
+}
+main .fa-solid {
+  transform: rotate(90deg);
+  color: black;
+}
+
+.inform {
+  display: flex;
+  gap: 10px;
+}
+.inform h2 span {
+  text-decoration: line-through;
+  color: gray;
+}
+.inform h4 {
+  color: gray;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.inform .price .narx {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.inform .price #prosent {
+  display: inline;
+  border-radius: 30px;
+  border: 1px solid white;
+  height: 30px;
+  background-color: pink;
+  color: red;
+}
+.inform .comfort {
+  color: gray;
+}
+.inform nav {
+  display: flex;
+  gap: 5px;
+}
+.inform nav .color {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.inform nav .brown {
+  background-color: darkred;
+}
+.inform nav .green {
+  background-color: darkslategray;
+}
+.inform nav .violet {
+  background-color: darkmagenta;
+}
+.inform section {
+  display: flex;
+  gap: 5px;
+}
+.inform section .black_b {
+  background-color: black;
+  color: white;
+}
+.inform section button {
+  height: 45px;
+  width: 90px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: lightgrey;
+}
+.inform .cart {
+  display: flex;
+  gap: 10px;
+}
+.inform .cart .size {
+  height: 45px;
+  width: 90px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: lightgrey;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.inform .cart .size a {
+  text-decoration: none;
+  color: black;
+}
+.inform .cart button {
+  height: 45px;
+  width: 300px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

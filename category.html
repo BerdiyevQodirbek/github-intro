@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+    <link rel="icon" href="./imgs/icon-logo.png" />
+    <link rel="stylesheet" href="./category.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <article>
+      <div class="article">
+        <div class="a-c1"></div>
+        <div class="a-c2">
+          <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
+        </div>
+        <div class="a-c">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </article>
+    <header></header>
+    <hr/>
+    <nav>
+      <div class="nav">
+        <a href="" style='color: #00000099;'>Home</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="" style='color: #000000;'>Casual</a>
+      </div>
+    </nav>
+    <main>
+      <div class="main">
+        <div class="filters">
+          <div class="f-intro">
+            <h2>Filters</h2>
+            <i class="fa-solid fa-filter" style='color: #00000066;'></i>
+          </div>
+          <hr/>
+          <div class="f-types">
+            <div id="f-type">
+              <p>T-Shirts</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Shorts</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Shirts</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Hoodie</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div id="f-type">
+              <p>Jeans</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-price">
+            <div class="f-price-h">
+              <h2>Price</h2>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-price_range">
+              <input type="range" min="0" max="125" value="50$" id='min-range'/>
+              <input type="range" min="125" max="250" value="200$" id='max-range'/>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-color">
+            <div class="f-color-h">
+              <h2>Color</h2>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-colors">
+              <div id="f-color" style='background-color: #00c12b;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #f50606;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #f5dd06;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #f57906;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #06caf5;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #063af5;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #7d06f5;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #f506a4;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div id="f-color" style='background-color: #ffffff;'>
+                <i class="fa-solid fa-check" style='color: #000000;'></i>
+              </div>
+              <div id="f-color" style='background-color: #000000;'>
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-size">
+            <div class="f-size-h">
+              <h2>Size</h2>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-sizes" style='justify-content: flex-start;'>
+              <button id='f-size' style='width: 96px;'>XX-Small</button>
+              <button id='f-size' style='width: 88px;'>X-Small</button>
+              <button id='f-size' style='width: 74px;'>Small</button>
+              <button id='f-size' style='width: 90px;'>Medium</button>
+              <button id='f-size' style='width: 76px;'>Large</button>
+              <button id='f-size' style='width: 89px;'>X-Large</button>
+              <button id='f-size' style='width: 98px;'>XX-Large</button>
+              <button id='f-size' style='width: 97px;'>3X-Large</button>
+              <button id='f-size' style='width: 98px;'>4x-Large</button>
+            </div>
+          </div>
+          <hr/>
+          <div class="f-dress_style">
+            <div class="f-dress_style-h">
+              <h2>Dress Style</h2>
+              <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="f-dress_styles">
+              <div id="f-type">
+                <p>Casual</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div id="f-type">
+                <p>Formal</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div id="f-type">
+                <p>Party</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div id="f-type">
+                <p>Gym</p>
+              <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+          <button id='f-btn'>Apply Filter</button>
+        </div>
+        <aside>
+          <div class="a-header">
+            <h1>Casual</h1>
+            <div class="a-h-sort">
+              <p>Showing 1-10 of 100 Products</p>
+              <p>Sort by: <b style='color: #000000;'>Most Popular</b> <i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+          </div>
+          <div class="a-cards">
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+            <div id="a-card"></div>
+          </div>
+          <hr>
+          <div class="a-pgs_ctrl">
+            <button><i class="fa-solid fa-arrow-left"></i> Previous</button>
+            <div class="a-pgs_num">
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>...</button>
+              <button>8</button>
+              <button>9</button>
+              <button>10</button>
+            </div>
+            <button>Next <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="footer"></div>
+    </footer>
+  </body>
+</html>

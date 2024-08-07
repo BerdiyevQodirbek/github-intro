@@ -61,7 +61,7 @@ footer section p a {
 }
 
 main {
-  padding: 10px;
+  padding: 50px;
 }
 main .links {
   padding: 10px;
@@ -78,26 +78,84 @@ main .fa-solid {
   transform: rotate(90deg);
   color: black;
 }
-
-.inform {
+main .bolimlar {
+  height: 50px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 130px;
+}
+main .bolimlar:active {
+  border-bottom: 2px solid black;
+}
+main .bolimlar a {
+  text-decoration: none;
+  color: gray;
+}
+main .bolimlar a:hover {
+  border-bottom: 2px solid black;
+}
+main .third_section {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-top: 10px;
+}
+main .all {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+main .all .repos {
+  gap: 20px;
+  padding: 10px;
+  align-items: flex-start;
+  display: block;
+}
+main .all .repos .source {
+  width: 500px;
+  height: 250px;
+  border-radius: 15px;
+  border: 1px solid rgb(218, 200, 200);
+  padding: 20px;
+}
+main .all .repos .source .mark {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 6px;
+}
+main .submit {
+  text-align: center;
+}
+main .submit .load {
+  width: 200px;
+  height: 50px;
+  border: 1px solid lightcyan;
+  border-radius: 30px;
+  background-color: rgb(230, 237, 237);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 500px;
+}
+main .inform {
   display: flex;
   gap: 10px;
 }
-.inform h2 span {
+main .inform h2 span {
   text-decoration: line-through;
   color: gray;
 }
-.inform h4 {
+main .inform h4 {
   color: gray;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.inform .price .narx {
+main .inform .price .narx {
   display: flex;
   align-items: center;
   text-align: center;
   gap: 5px;
 }
-.inform .price #prosent {
+main .inform .price #prosent {
   display: inline;
   border-radius: 30px;
   border: 1px solid white;
@@ -105,48 +163,48 @@ main .fa-solid {
   background-color: pink;
   color: red;
 }
-.inform .comfort {
+main .inform .comfort {
   color: gray;
 }
-.inform nav {
+main .inform nav {
   display: flex;
   gap: 5px;
 }
-.inform nav .color {
+main .inform nav .color {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: blue;
 }
-.inform nav .brown {
+main .inform nav .brown {
   background-color: darkred;
 }
-.inform nav .green {
+main .inform nav .green {
   background-color: darkslategray;
 }
-.inform nav .violet {
+main .inform nav .violet {
   background-color: darkmagenta;
 }
-.inform section {
+main .inform section {
   display: flex;
   gap: 5px;
 }
-.inform section .black_b {
+main .inform section .black_b {
   background-color: black;
   color: white;
 }
-.inform section button {
+main .inform section button {
   height: 45px;
   width: 90px;
   border: 1px solid white;
   border-radius: 25px;
   background-color: lightgrey;
 }
-.inform .cart {
+main .inform .cart {
   display: flex;
   gap: 10px;
 }
-.inform .cart .size {
+main .inform .cart .size {
   height: 45px;
   width: 90px;
   border: 1px solid white;
@@ -157,11 +215,11 @@ main .fa-solid {
   display: flex;
   justify-content: space-around;
 }
-.inform .cart .size a {
+main .inform .cart .size a {
   text-decoration: none;
   color: black;
 }
-.inform .cart button {
+main .inform .cart button {
   height: 45px;
   width: 300px;
   border-radius: 25px;

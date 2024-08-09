@@ -40,35 +40,4 @@ header .headshop {
   align-items: center;
 }
 
-main {
-  background-color: #F2F0F1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 600px;
-  position: relative;
-}
-main .mainimg {
-  width: 900px;
-}
-main .mainimg .boy {
-  width: 520px;
-  position: absolute;
-  right: 100px;
-  top: 0px;
-}
-main .mainimg .star {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-}
-main .mainimg .star1 {
-  position: absolute;
-  top: 270px;
-  right: 630px;
-}
-main .maininformation h1 {
-  font-size: 60px;
-}
-
 /*# sourceMappingURL=home.css.map */

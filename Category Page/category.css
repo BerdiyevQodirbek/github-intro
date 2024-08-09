@@ -14,7 +14,7 @@ hr {
   color: #0000001A;
   background-color: #0000001A;
 }
-article, .article, header, .header, nav, .nav, main, .main, footer, .footer, .a-cards, .a-c-stars {
+article, .article, header, .header, nav, .nav, main, .main, footer, .footer, .a-cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,7 +25,7 @@ article, header, nav, main, footer {
   width: 99vw;
 }
 .article, .header, .nav, .main, .footer {
-  width: 112.5rem;
+  width: 100rem;
 }
 article {
   height: 38px;
@@ -59,7 +59,7 @@ article {
   align-items: center;
   gap: 1rem;
 }
-.main, .f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, .a-header, .a-h-sort, .a-pgs_ctrl {
+.f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, .a-header, .a-h-sort, .a-pgs_ctrl {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

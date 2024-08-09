@@ -1,19 +1,16 @@
 footer {
-  width: 100%;
-  height: 350px;
-  border: 1px solid gray;
+  max-width: 100%;
+  height: 20rem;
   position: relative;
-  top: 2567px;
-  background-color: rgb(247, 240, 240);
 }
 footer .about {
   background-color: black;
-  width: 80%;
+  max-width: 90rem;
   border: 2px solid white;
   border-radius: 15px;
   display: flex;
   align-items: center;
-  height: 120px;
+  height: 8rem;
   bottom: 310px;
   left: 130px;
   justify-content: space-around;
@@ -58,6 +55,29 @@ footer section {
 footer section p a {
   text-decoration: none;
   color: gray;
+}
+@media screen and (max-width: 540px) {
+  footer .about {
+    flex-direction: column;
+    height: 15rem;
+    width: 26rem;
+  }
+  footer .title {
+    flex-direction: column;
+    max-height: 120rem;
+  }
+  footer section {
+    display: block;
+  }
+  footer .first_h {
+    flex-direction: column;
+  }
+  footer .search {
+    flex-direction: column;
+  }
+  footer footer {
+    max-height: 120rem;
+  }
 }
 
 main {
@@ -225,6 +245,47 @@ main .inform .cart button {
   border-radius: 25px;
   background-color: black;
   color: white;
+}
+main .clothes {
+  border: 1px solid black;
+}
+@media screen and (max-width: 540px) {
+  main .inform {
+    flex-direction: column;
+  }
+  main .inform .cart .size {
+    width: 7rem;
+    height: 25px;
+  }
+  main .inform .cart .size button {
+    width: 150;
+    height: 25px;
+  }
+  main .third_section {
+    flex-direction: row;
+  }
+  main .third_section .menu {
+    flex-direction: row;
+  }
+  main .third_section .menu img {
+    width: 3rem;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .all {
+    flex-direction: column;
+  }
+}
+main .repos {
+  width: 200px;
+}
+main .repos .source {
+  width: 300px;
+  height: 180px;
+}
+main .repos .source .mark {
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

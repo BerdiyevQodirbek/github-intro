@@ -1,5 +1,6 @@
 @import '_color.scss';
-
+@import '_footer.scss';
+@import '_main.scss';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -43,3 +44,4 @@ header {
         
     }
 }
+

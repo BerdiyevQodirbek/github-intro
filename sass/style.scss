@@ -1,2 +1,47 @@
+@import '_color.scss';
 @import '_footer.scss';
 @import '_main.scss';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homecontainer {
+    padding: 30px 30px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100px;
+    .headsection {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 300px;
+    }
+    .search {
+        width: 600px;
+        height: 25px;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: #F0F0F0;
+        color: rgba(0, 0, 0, 0.504);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .headshop {
+        width: 50px;
+        height: 20px;
+        border: 1px solid red($color: #000000);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+

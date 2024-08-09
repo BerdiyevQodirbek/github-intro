@@ -59,7 +59,7 @@ article {
   align-items: center;
   gap: 1rem;
 }
-.f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, .a-header, .a-h-sort, .a-pgs_ctrl {
+.main, .f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, .a-header, .a-h-sort, .a-pgs_ctrl {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -136,6 +136,9 @@ aside hr {
 #a-card {
   max-width: 300px;
   height: 408px;
+}
+.a-c-stars i {
+  color: #ffc633;
 }
 #pre_nxt {
   height: 36px;

@@ -1,0 +1,87 @@
+.section {
+    width: 100%;
+    height: 140px;
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    div {
+        font-size: 50px;
+    }
+}  
+.shop {
+
+    .charge {
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            height: 90px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .product {
+               width: 300px;
+               height: 350px;
+               border: 1px solid red;
+
+                .img {
+                      width: 100%;
+                      height: 80%;
+                      
+                      
+                      img {
+                        width: 100%;
+                        height: 100%;
+                        
+                      }
+                }
+            }
+        }
+    }
+}
+
+.pay {
+    display: flex;
+    flex-direction: column;
+}
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    del {
+
+        h3 {
+            color: rgb(111, 111, 111);
+        }
+    }
+    h3 {
+        font-size: 25px;
+    }
+
+    .discount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 17px;
+        border: 1px solid red;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        color: red;
+    }
+
+}

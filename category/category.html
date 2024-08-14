@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+
+    <!-- header -->
     <header></header>
     <hr/>
+
+    <!-- nav -->
     <nav>
       <div class="nav">
         <a href="" style='color: #00000099;'>Home</a>
@@ -18,92 +22,148 @@
         <a href="" style='color: #000000;'>Casual</a>
       </div>
     </nav>
+
+    <!-- main -->
     <main>
       <div class="main">
-        <div class="filters">
+
+        <!-- filtr -->
+        <section>
+
+          <!-- filtr intro -->
           <div class="f-intro">
             <h2>Filters</h2>
             <i class="fa-solid fa-filter" style='color: #00000066;'></i>
           </div>
           <hr/>
+
+          <!-- filtr kiyim_lar -->
           <div class="f-types">
+
+            <!-- kiyim №1 -->
             <div id="f-type">
               <p>T-Shirts</p>
               <i class="fa-solid fa-angle-right"></i>
             </div>
+
+            <!-- kiyim №2 -->
             <div id="f-type">
               <p>Shorts</p>
               <i class="fa-solid fa-angle-right"></i>
             </div>
+
+            <!-- kiyim №3 -->
             <div id="f-type">
               <p>Shirts</p>
               <i class="fa-solid fa-angle-right"></i>
             </div>
+
+            <!-- kiyim №4 -->
             <div id="f-type">
               <p>Hoodie</p>
               <i class="fa-solid fa-angle-right"></i>
             </div>
+
+            <!-- kiyim №5 -->
             <div id="f-type">
               <p>Jeans</p>
               <i class="fa-solid fa-angle-right"></i>
             </div>
           </div>
           <hr/>
+
+          <!-- filtr narx -->
           <div class="f-price">
+
+            <!-- narx header -->
             <div class="f-price-h">
               <h2>Price</h2>
               <i class="fa-solid fa-angle-up"></i>
             </div>
+
+            <!-- narx bowqariw -->
             <div class="f-price_range">
               <input type="range" min="0" max="125" value="50$" id='min-range'/>
               <input type="range" min="125" max="250" value="200$" id='max-range'/>
             </div>
           </div>
           <hr/>
+
+          <!-- filtr rang -->
           <div class="f-color">
+
+            <!-- rang header -->
             <div class="f-color-h">
               <h2>Color</h2>
               <i class="fa-solid fa-angle-up"></i>
             </div>
+
+            <!-- ranglar -->
             <div class="f-colors">
+
+              <!-- rang №1 -->
               <div id="f-color" style='background-color: #00c12b;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №2 -->
               <div id="f-color" style='background-color: #f50606;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №3 -->
               <div id="f-color" style='background-color: #f5dd06;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №4 -->
               <div id="f-color" style='background-color: #f57906;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №5 -->
               <div id="f-color" style='background-color: #06caf5;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №6 -->
               <div id="f-color" style='background-color: #063af5;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №7 -->
               <div id="f-color" style='background-color: #7d06f5;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №8 -->
               <div id="f-color" style='background-color: #f506a4;'>
                 <i class="fa-solid fa-check"></i>
               </div>
+
+              <!-- rang №9 -->
               <div id="f-color" style='background-color: #ffffff;'>
                 <i class="fa-solid fa-check" style='color: #000000;'></i>
               </div>
+
+              <!-- rang №10 -->
               <div id="f-color" style='background-color: #000000;'>
                 <i class="fa-solid fa-check"></i>
               </div>
             </div>
           </div>
           <hr/>
+
+          <!-- filtr razmer -->
           <div class="f-size">
+
+            <!-- razmer header -->
             <div class="f-size-h">
               <h2>Size</h2>
               <i class="fa-solid fa-angle-up"></i>
             </div>
+
+            <!-- razmerlar -->
             <div class="f-sizes" style='justify-content: flex-start;'>
               <button id='f-size' style='width: 96px;'>XX-Small</button>
               <button id='f-size' style='width: 88px;'>X-Small</button>
@@ -117,33 +177,53 @@
             </div>
           </div>
           <hr/>
+
+          <!-- filtr kiyim_tur -->
           <div class="f-dress_style">
+
+            <!-- kiyim_tur header -->
             <div class="f-dress_style-h">
               <h2>Dress Style</h2>
               <i class="fa-solid fa-angle-up"></i>
             </div>
+            
+            <!-- kiyim_turlar -->
             <div class="f-dress_styles">
+
+              <!-- kiyim_tur №1 -->
               <div id="f-type">
                 <p>Casual</p>
               <i class="fa-solid fa-angle-right"></i>
               </div>
+
+              <!-- kiyim_tur №2 -->
               <div id="f-type">
                 <p>Formal</p>
               <i class="fa-solid fa-angle-right"></i>
               </div>
+
+              <!-- kiyim_tur №3 -->
               <div id="f-type">
                 <p>Party</p>
               <i class="fa-solid fa-angle-right"></i>
               </div>
+
+              <!-- kiyim_tur №4 -->
               <div id="f-type">
                 <p>Gym</p>
               <i class="fa-solid fa-angle-right"></i>
               </div>
             </div>
           </div>
+
+          <!-- filtr qo'llaw -->
           <button id='f-btn'>Apply Filter</button>
-        </div>
+        </section>
+
+        <!-- aside -->
         <aside>
+
+          <!-- aside header -->
           <div class="a-header">
             <h1>Casual</h1>
             <div class="a-h-sort">
@@ -151,7 +231,11 @@
               <p>Sort by: <b>Most Popular</b> <i class="fa-solid fa-chevron-down"></i></p>
             </div>
           </div>
+
+          <!-- aside card -->
           <div class="a-cards">
+
+            <!-- card №1 -->
             <div id="a-card">
               <img src="./imgs/Frame 33.png" alt="">
               <h3>Gradient Graphic T-shirt</h3>
@@ -164,6 +248,8 @@
               </div>
               <h2>$145</h2>
             </div>
+
+            <!-- card №2 -->
             <div id="a-card">
               <img src="./imgs/Frame 34.png" alt="">
               <h3>Polo with Tipping Details</h3>
@@ -177,6 +263,8 @@
               </div>
               <h2>$180</h2>
             </div>
+
+            <!-- card №3 -->
             <div id="a-card">
               <img src="./imgs/Frame 38.png" alt="">
               <h3>Black Striped T-shirt</h3>
@@ -188,8 +276,14 @@
                 <i class="fa-solid fa-star"></i>
                 <p>5.0/5</p>
               </div>
-              <h2>$120</h2>
+              <div class="c-fixed_p">
+                <h2>$120</h2>
+                <h2 id='f_p-color'><del>$150</del></h2>
+                <div id="discount_p">-30%</div>
+              </div>
             </div>
+
+            <!-- card №4 -->
             <div id="a-card">
               <img src="./imgs/Frame 71.png" alt="">
               <h3>Skinny Feat Jeans</h3>
@@ -200,8 +294,14 @@
                 <i class="fa-solid fa-star-half"></i>
                 <p>3.5/5</p>
               </div>
-              <h2>$240</h2>
+              <div class="c-fixed_p">
+                <h2>$240</h2>
+                <h2 id='f_p-color'><del>$260</del></h2>
+                <div id="discount_p">-20%</div>
+              </div>
             </div>
+
+            <!-- card №5 -->
             <div id="a-card">
               <img src="./imgs/Frame 72.png" alt="">
               <h3>Checkered Shirt</h3>
@@ -215,6 +315,8 @@
               </div>
               <h2>$180</h2>
             </div>
+
+            <!-- card №6 -->
             <div id="a-card">
               <img src="./imgs/Frame 73.png" alt="">
               <h3>Sleeve Striped T-shirt</h3>
@@ -226,48 +328,73 @@
                 <i class="fa-solid fa-star-half"></i>
                 <p>4.5/5</p>
               </div>
-              <h2>$130</h2>
-            </div>
-            <div id="a-card">
-              <img src="./imgs/Frame 32.png" alt="">
-              <h3>Vertical Striped Shirt</h3>
-              <div class="a-c-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>5.0/5</p>
+              <div class="c-fixed_p">
+                <h2>$130</h2>
+                <h2 id='f_p-color'><del>$160</del></h2>
+                <div id="discount_p">-30%</div>
               </div>
-              <h2>$212</h2>
             </div>
-            <div id="a-card">
-              <img src="./imgs/Frame 70.png" alt="">
-              <h3>ourage Graphic T-shirt</h3>
-              <div class="a-c-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>4.0/5</p>
+
+            <!-- card-lar row №3 -->
+            <div class="a-cards_r3">
+
+              <!-- card №7 -->
+              <div id="a-card">
+                <img src="./imgs/Frame 32.png" alt="">
+                <h3>Vertical Striped Shirt</h3>
+                <div class="a-c-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <p>5.0/5</p>
+                </div>
+                <div class="c-fixed_p">
+                  <h2>$212</h2>
+                  <h2 id='f_p-color'><del>$232</del></h2>
+                  <div id="discount_p">-20%</div>
+                </div>
               </div>
-              <h2>$145</h2>
-            </div>
-            <div id="a-card">
-              <img src="./imgs/Frame 71.png" alt="">
-              <h3>Loose Fit Bermuda Shorts</h3>
-              <div class="a-c-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>3.0/5</p>
+  
+              <!-- card №8 -->
+              <div id="a-card">
+                <img src="./imgs/Frame 70.png" alt="">
+                <h3>ourage Graphic T-shirt</h3>
+                <div class="a-c-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <p>4.0/5</p>
+                </div>
+                <h2>$145</h2>
               </div>
-              <h2>$80</h2>
+  
+              <!-- card №9 -->
+              <div id="a-card">
+                <img src="./imgs/Frame 71.png" alt="">
+                <h3>Loose Fit Bermuda Shorts</h3>
+                <div class="a-c-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <p>3.0/5</p>
+                </div>
+                <h2>$80</h2>
+              </div>
             </div>
+
           </div>
           <hr>
+
+          <!-- aside sahifa -->
           <div class="a-pgs_ctrl" style='margin-top: 20px;'>
+
+            <!-- oldingi sahifa -->
             <button id='pre_nxt' style='width: 110px;'><i class="fa-solid fa-arrow-left"></i> Previous</button>
+
+            <!-- sahifa raqam -->
             <div class="a-pgs_num">
               <button>1</button>
               <button>2</button>
@@ -277,11 +404,15 @@
               <button>9</button>
               <button>10</button>
             </div>
+
+            <!-- keyingi sahifa -->
             <button id='pre_nxt' style='width: 86px;'>Next <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </aside>
       </div>
     </main>
+
+    <!-- footer -->
     <footer>
       <div class="footer"></div>
     </footer>

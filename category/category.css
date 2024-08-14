@@ -1,3 +1,4 @@
+/* asos */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +18,9 @@ hr {
   color: #0000001A;
   background-color: #0000001A;
 }
-header, .header, nav, .nav, main, .main, footer, .footer, .a-cards, .a-c-stars {
+
+/* semantics */
+header, .header, nav, .nav, main, .main, footer, .footer, .a-cards, .a-c-stars, .c-fixed_p, #discount_p {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,19 +38,38 @@ header, nav, main, footer {
   justify-content: flex-start;
 }
 .main {
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .main a, .main p {
   color: #00000099;
 }
-.filters {
+
+/* filtr */
+section {
   width: 295px;
   height: 1170px;
   border: 2px solid #0000001A;
   border-radius: 20px;
 }
-.filters, .f-types, .f-price, .f-color, .f-size, .f-dress_style, .f-dress_styles, #a-card {
+section button {
+  border: none;
+  border-radius: 62px;
+  gap: 12px;
+}
+#f-btn {
+  height: 48px;
+  background-color: #000000;
+  color: #ffffff;
+}
+#f-btn:hover {
+  background-color: #f0f0f0;
+  color: #00000099;
+  transition: 0.5s ease;
+}
+
+/* umumiylar */
+section, .f-types, .f-price, .f-color, .f-size, .f-dress_style, .f-dress_styles, #a-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,12 +83,14 @@ header, nav, main, footer {
   align-items: center;
   gap: 8px;
 }
-.f-types, .f-price, .f-color, .f-size, .f-dress_style, .f-dress_styles, .f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, #f-btn, .filters hr {
+.f-types, .f-price, .f-color, .f-size, .f-dress_style, .f-dress_styles, .f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, #f-btn, section hr {
   width: 247px;
 }
 .f-colors, .f-sizes, .a-cards {
   flex-wrap: wrap;
 }
+
+/* filtr narx_bowqariw */
 .f-price_range {
   position: relative;
   height: 43px;
@@ -81,6 +105,8 @@ header, nav, main, footer {
 #max-range {
   left: 120px;
 }
+
+/* filtr rang */
 #f-color {
   width: 37px;
   height: 37px;
@@ -97,6 +123,8 @@ header, nav, main, footer {
   display: block;
   transition: 0.5s ease;
 }
+
+/* filtr razmer */
 #f-size {
   height: 39px;
   background-color: #f0f0f0;
@@ -107,24 +135,13 @@ header, nav, main, footer {
   color: #ffffff;
   transition: 0.5s ease;
 }
-.filters button {
-  border: none;
-  border-radius: 62px;
-  gap: 12px;
-}
-#f-btn {
-  height: 48px;
-  background-color: #000000;
-  color: #ffffff;
-}
-#f-btn:hover {
-  background-color: #f0f0f0;
-  color: #00000099;
-  transition: 0.5s ease;
-}
+
+/* aside */
 aside, aside hr {
   width: 925px;
 }
+
+/* aside card-lar */
 .a-cards {
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -141,6 +158,19 @@ aside, aside hr {
 .a-c-stars i {
   color: #ffc633;
 }
+#f_p-color {
+  color: #00000066;
+}
+#discount_p {
+  width: 58px;
+  height: 28px;
+  border-radius: 62px;
+  gap: 12px;
+  background-color: #ff33331a;
+  color: #ff3333;
+}
+
+/* aside sahifa */
 #pre_nxt {
   height: 36px;
   border: 2px solid #0000001A;
@@ -157,4 +187,32 @@ aside, aside hr {
 .a-pgs_num button:hover, #pre_nxt:hover {
   border: none;
   background-color: #0000000F;
+}
+
+/* media */
+@media screen and (min-width: 390px) {
+  * {
+    font-size: 12px;
+  }
+  body {
+    width: 390px;
+    height: auto;
+  }
+  section {
+    display: none;
+  }
+  .a-header, .a-cards, .a-pgs_ctrl {
+    width: 359px;
+  }
+  #a-card {
+    width: 172px;
+    height: 300px;
+  }
+  #a-card img {
+    width: 172px;
+    height: 174px;
+  }
+  .a-cards_r3 {
+    display: none;
+  }
 }

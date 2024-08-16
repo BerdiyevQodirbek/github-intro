@@ -1,23 +1,23 @@
 footer {
-    max-width: 100%;
+    width: 100vw;
     height: 20rem;
+     position: relative;
+    background-color: lightgray;
    
-    position: relative;
-
-
 
     .about {
         background-color: black;
-        max-width: 90rem;
+        width: 80vw;
         border: 2px solid white;
         border-radius: 15px;
         display: flex;
         align-items: center;
         height: 8rem;
-        bottom: 310px;
-        left: 130px;
+        bottom: 300px;
+        left: 8rem;
         justify-content: space-around;
         position: absolute;
+     
 
 
         .first_h {
@@ -55,6 +55,7 @@ footer {
             display: block;
             color: black;
             padding: 10px;
+            background-color: lightgray;
 
             a {
                 text-decoration: none;
@@ -78,8 +79,8 @@ footer {
     @media screen and (max-width:540px) {
         .about {
             flex-direction: column;
-            height: 15rem;
-            width: 26rem;
+            height: 27vh;
+          
         }
 
         .title {

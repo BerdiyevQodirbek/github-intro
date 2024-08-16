@@ -12,7 +12,6 @@
 
     <!-- header -->
     <header></header>
-    <hr/>
 
     <!-- nav -->
     <nav>
@@ -225,10 +224,14 @@
 
           <!-- aside header -->
           <div class="a-header">
-            <h1>Casual</h1>
+            <h1 style='font-size: 32px;'>Casual</h1>
+
+            <!-- header sort -->
             <div class="a-h-sort">
               <p>Showing 1-10 of 100 Products</p>
-              <p>Sort by: <b>Most Popular</b> <i class="fa-solid fa-chevron-down"></i></p>
+              <div class="a-h-sort_by">
+                <p>Sort by: <b>Most Popular</b> <i class="fa-solid fa-chevron-down"></i></p>
+              </div>
             </div>
           </div>
 
@@ -334,79 +337,63 @@
                 <div id="discount_p">-30%</div>
               </div>
             </div>
-
-            <!-- card-lar row №3 -->
-            <div class="a-cards_r3">
-
-              <!-- card №7 -->
-              <div id="a-card">
-                <img src="./imgs/Frame 32.png" alt="">
-                <h3>Vertical Striped Shirt</h3>
-                <div class="a-c-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <p>5.0/5</p>
-                </div>
-                <div class="c-fixed_p">
-                  <h2>$212</h2>
-                  <h2 id='f_p-color'><del>$232</del></h2>
-                  <div id="discount_p">-20%</div>
-                </div>
+            
+            <!-- card №7 -->
+            <div id="a-card">
+              <img src="./imgs/Frame 32.png" alt="">
+              <h3>Vertical Striped Shirt</h3>
+              <div class="a-c-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>5.0/5</p>
               </div>
-  
-              <!-- card №8 -->
-              <div id="a-card">
-                <img src="./imgs/Frame 70.png" alt="">
-                <h3>ourage Graphic T-shirt</h3>
-                <div class="a-c-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <p>4.0/5</p>
-                </div>
-                <h2>$145</h2>
-              </div>
-  
-              <!-- card №9 -->
-              <div id="a-card">
-                <img src="./imgs/Frame 71.png" alt="">
-                <h3>Loose Fit Bermuda Shorts</h3>
-                <div class="a-c-stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <p>3.0/5</p>
-                </div>
-                <h2>$80</h2>
+              <div class="c-fixed_p">
+                <h2>$212</h2>
+                <h2 id='f_p-color'><del>$232</del></h2>
+                <div id="discount_p">-20%</div>
               </div>
             </div>
 
+            <!-- card №8 -->
+            <div id="a-card">
+              <img src="./imgs/Frame 70.png" alt="">
+              <h3>ourage Graphic T-shirt</h3>
+              <div class="a-c-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.0/5</p>
+              </div>
+              <h2>$145</h2>
+            </div>
+            
           </div>
+          <br>
           <hr>
 
           <!-- aside sahifa -->
           <div class="a-pgs_ctrl" style='margin-top: 20px;'>
 
             <!-- oldingi sahifa -->
-            <button id='pre_nxt' style='width: 110px;'><i class="fa-solid fa-arrow-left"></i> Previous</button>
+            <button id='pre_nxt' class='a-b-previous'><i class="fa-solid fa-arrow-left"></i> Previous</button>
 
             <!-- sahifa raqam -->
-            <div class="a-pgs_num">
+            <div class="a-pgs_num" style='gap: 0;'>
               <button>1</button>
               <button>2</button>
-              <button>3</button>
+              <button id='none_btn'>3</button>
               <button>...</button>
-              <button>8</button>
+              <button id='none_btn'>8</button>
               <button>9</button>
               <button>10</button>
             </div>
 
             <!-- keyingi sahifa -->
-            <button id='pre_nxt' style='width: 86px;'>Next <i class="fa-solid fa-arrow-right"></i></button>
+            <button id='pre_nxt' class='a-b-next'>Next <i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </aside>
       </div>

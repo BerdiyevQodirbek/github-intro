@@ -1,19 +1,18 @@
 footer {
-  width: 100vw;
+  max-width: 100%;
   height: 20rem;
   position: relative;
-  background-color: lightgray;
 }
 footer .about {
   background-color: black;
-  width: 80vw;
+  max-width: 90rem;
   border: 2px solid white;
   border-radius: 15px;
   display: flex;
   align-items: center;
   height: 8rem;
-  bottom: 300px;
-  left: 8rem;
+  bottom: 310px;
+  left: 130px;
   justify-content: space-around;
   position: absolute;
 }
@@ -43,7 +42,6 @@ footer .title div {
   display: block;
   color: black;
   padding: 10px;
-  background-color: lightgray;
 }
 footer .title div a {
   text-decoration: none;
@@ -61,7 +59,8 @@ footer section p a {
 @media screen and (max-width: 540px) {
   footer .about {
     flex-direction: column;
-    height: 27vh;
+    height: 15rem;
+    width: 26rem;
   }
   footer .title {
     flex-direction: column;
@@ -82,8 +81,7 @@ footer section p a {
 }
 
 main {
-  padding: 30px;
-  padding-top: 0;
+  padding: 50px;
 }
 main .links {
   padding: 10px;
@@ -96,7 +94,7 @@ main .links a {
 main .links a:hover {
   color: black;
 }
-main .fa-angle-up {
+main .fa-solid {
   transform: rotate(90deg);
   color: black;
 }
@@ -126,18 +124,17 @@ main .third_section {
 }
 main .all {
   display: flex;
+  gap: 30px;
   padding: 10px;
-  justify-content: space-around;
 }
 main .all .repos {
+  gap: 20px;
   padding: 10px;
   align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: block;
 }
 main .all .repos .source {
-  max-width: 50rem;
+  width: 500px;
   height: 250px;
   border-radius: 15px;
   border: 1px solid rgb(218, 200, 200);
@@ -152,7 +149,7 @@ main .submit {
   text-align: center;
 }
 main .submit .load {
-  width: 30vw;
+  width: 200px;
   height: 50px;
   border: 1px solid lightcyan;
   border-radius: 30px;
@@ -163,7 +160,6 @@ main .submit .load {
 main .inform {
   display: flex;
   gap: 10px;
-  padding: 10px;
 }
 main .inform h2 span {
   text-decoration: line-through;
@@ -172,11 +168,6 @@ main .inform h2 span {
 main .inform h4 {
   color: gray;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-main .inform .price {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 main .inform .price .narx {
   display: flex;
@@ -255,25 +246,8 @@ main .inform .cart button {
   background-color: black;
   color: white;
 }
-main .a-cards {
-  display: flex;
-  gap: 5px;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-main #a-card {
-  height: 410px;
-  max-width: 15rem;
-  transition: 0.5s;
-}
-main #a-card:hover {
-  transform: scale(1, 1.1);
-}
-main #a-card img {
-  max-width: 15rem;
-}
-main .a-c-stars i {
-  color: #ffc633;
+main .clothes {
+  border: 1px solid black;
 }
 @media screen and (max-width: 540px) {
   main .inform {
@@ -301,22 +275,17 @@ main .a-c-stars i {
 @media screen and (max-width: 500px) {
   main .all {
     flex-direction: column;
-    gap: 0;
   }
-  main .repos {
-    width: 200px;
-  }
-  main .repos .source {
-    width: 300px;
-    height: 180px;
-  }
-  main .repos .source .mark {
-    width: auto;
-  }
-  main .a-cards {
-    padding: 2px;
-    margin: auto;
-  }
+}
+main .repos {
+  width: 200px;
+}
+main .repos .source {
+  width: 300px;
+  height: 180px;
+}
+main .repos .source .mark {
+  width: auto;
 }
 
 main {
@@ -617,4 +586,4 @@ header .headshop {
   padding: 30px 30px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

@@ -8,49 +8,44 @@
 a {
   text-decoration: none;
 }
+b {
+  color: #000000;
+}
 hr {
   height: 2px;
   border: none;
   color: #0000001A;
   background-color: #0000001A;
 }
-article, .article, header, .header, nav, .nav, main, .main, footer, .footer, .a-cards, .a-c-stars {
+header, .header, nav, .nav, main, .main, footer, .footer, .a-cards, .a-c-stars {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-article, header, nav, main, footer {
+header, nav, main, footer {
   width: 99vw;
 }
-.article, .header, .nav, .main, .footer {
-  width: 112.5rem;
-}
-article {
-  height: 38px;
-  background-color: #000000;
-  color: #ffffff;
-}
-.article {
-  justify-content: space-between;
-}
-.a-c2 a {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+.header, .nav, .main, .footer {
+  width: 100rem;
 }
 .nav {
   height: 50px;
   justify-content: flex-start;
+}
+.main {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.main a, .main p {
+  color: #00000099;
 }
 .filters {
   width: 295px;
   height: 1170px;
   border: 2px solid #0000001A;
   border-radius: 20px;
-}
-.main a, .main p {
-  color: #00000099;
 }
 .filters, .f-types, .f-price, .f-color, .f-size, .f-dress_style, .f-dress_styles, #a-card {
   display: flex;
@@ -59,7 +54,7 @@ article {
   align-items: center;
   gap: 1rem;
 }
-.main, .f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, .a-header, .a-h-sort, .a-pgs_ctrl {
+.f-intro, #f-type, .f-price-h, .f-price_range, .f-color-h, .f-colors, .f-size-h, .f-sizes, .f-dress_style-h, .a-header, .a-h-sort, .a-pgs_ctrl {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -127,15 +122,21 @@ article {
   color: #00000099;
   transition: 0.5s ease;
 }
-aside {
+aside, aside hr {
   width: 925px;
 }
-aside hr {
-  width: 925px;
+.a-cards {
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 #a-card {
   max-width: 300px;
   height: 408px;
+  align-items: flex-start;
+  gap: 8px;
+}
+.a-c-stars {
+  gap: 8px;
 }
 .a-c-stars i {
   color: #ffc633;

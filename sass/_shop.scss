@@ -1,0 +1,214 @@
+.section {
+    width: 100%;
+    height: 140px;
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    div {
+        font-size: 50px;
+    }
+}  
+.shop {
+
+    .charge {
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            height: 90px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .product {
+               width: 300px;
+               height: 350px;
+
+                .img {
+                      width: 100%;
+                      height: 80%;
+                      
+                      
+                      img {
+                        width: 100%;
+                        height: 100%;
+                        
+                      }
+                }
+            }
+        }
+    }
+}
+
+.pay {
+    display: flex;
+    flex-direction: column;
+}
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    del {
+
+        h3 {
+            color: rgb(111, 111, 111);
+        }
+    }
+    h3 {
+        font-size: 25px;
+    }
+
+    .discount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 17px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        color: red;
+    }
+
+}
+.view {
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    border-color: rgba(128, 123, 123, 0.415);
+    background-color: white;
+}
+
+.touch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.views {
+    width: 100%;
+    height: 650px;
+    border: 1px solid black;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .appearance {
+        width: 85%;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        h2 {
+            font-size: 30px;
+            text-align: left;
+        }
+    }
+}
+
+.casual {
+    width: 32%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url(https://dentrixdentalcare.com/wp-content/uploads/2016/08/Oral-Health-Between-Men-and-Women-1080x675.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.formal {
+    width: 65%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url(https://st3.depositphotos.com/1004219/15490/i/1600/depositphotos_154905666-stock-photo-young-couple-in-formal-dresses.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.party {
+    width: 65%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url(https://i.ebayimg.com/images/g/KbIAAOSw2Chj~dGf/s-l1600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.gym {
+    width: 32%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url(https://media.gq-magazine.co.uk/photos/6617f0a1efbaebc1433f38d5/3:4/w_748%2Cc_limit/GymClothes_Nike.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.comments {
+    padding-top: 30px;
+    h2 {
+        font-size: 50px;
+    }
+    i {
+        font-size: 30px;
+    }
+    .line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 400px;
+}
+.people {
+    width: 500px;
+    height: 330px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 20px;
+
+}

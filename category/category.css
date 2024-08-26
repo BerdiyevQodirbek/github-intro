@@ -196,7 +196,7 @@ aside, aside hr {
 }
 
 /* media */
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
   * {
     font-size: 12px;
   }

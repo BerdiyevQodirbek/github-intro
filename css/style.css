@@ -349,7 +349,7 @@ main .mainimg .star1 {
 main .maininformation h1 {
   font-size: 60px;
 }
-main .maininformation .shop {
+main .maininformation .xarid {
   width: 170px;
   height: 35px;
   border-radius: 20px;
@@ -374,6 +374,11 @@ main .maininformation .numbers div h2 {
   align-items: center;
 }
 
+@media screen and (max-width: 550px) {
+  main {
+    flex-direction: column;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -406,6 +411,72 @@ header .headshop {
   align-items: center;
 }
 
+.box {
+  width: 100vw;
+  min-height: 10vh;
+  background-color: aqua;
+  display: none;
+}
+
+.box ul {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  z-index: 3;
+}
+
+.box ul li {
+  padding: 20px;
+}
+
+.box ul li:hover {
+  background-color: antiquewhite;
+}
+
+input, footer .about .search button {
+  display: none;
+}
+
+label {
+  position: absolute;
+  left: 0%;
+  display: none;
+  top: 90px;
+}
+
+@media screen and (max-width: 550px) {
+  label {
+    display: block;
+    position: absolute;
+    top: 39px;
+    left: 5px;
+  }
+  .box {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 5px;
+  }
+  .homecontainer header {
+    height: 500px;
+  }
+  header {
+    padding: 3px;
+  }
+  header .headsection {
+    display: none;
+  }
+  header .search {
+    width: 150px;
+  }
+  header .search div {
+    font-size: 10px;
+  }
+  input:checked + .box, footer .about .search button:checked + .box {
+    display: block;
+  }
+}
 .section {
   width: 100%;
   height: 140px;
@@ -601,10 +672,21 @@ header .headshop {
 }
 
 .people {
-  width: 500px;
-  height: 330px;
+  width: 450px;
+  height: 250px;
   border: 1px solid rgb(216, 216, 216);
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 13px;
+  padding-left: 20px;
+}
+.people h3 {
+  font-size: 30px;
+}
+.people div {
+  font-size: 22px;
 }
 
 * {
@@ -615,6 +697,4 @@ header .headshop {
 
 .homecontainer {
   padding: 30px 30px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

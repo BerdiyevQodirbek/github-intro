@@ -31,7 +31,7 @@ main {
             font-size: 60px;
         }
 
-        .shop {
+        .xarid {
             width: 170px;
             height: 35px;
             border-radius: 20px;
@@ -62,4 +62,11 @@ main {
     justify-content: center;
     align-items: center;
 }
-  
+@media screen and (max-width: 550px) {
+  main {
+    flex-direction: column;
+
+    
+  }
+} 
+    

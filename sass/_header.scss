@@ -31,3 +31,70 @@ header {
         
     }
 }
+.box {
+    width: 100vw;
+    min-height: 10vh;
+    background-color: aqua;
+    display: none;
+}
+
+.box ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    z-index: 3;
+  }
+  
+.box ul li {
+    padding: 20px;
+}
+  
+.box ul li:hover {
+    background-color: antiquewhite;
+}
+input {
+    display: none;
+  }
+  
+label {
+    position: absolute;
+    left: 0%;
+    display: none;
+    top: 90px;
+  }
+
+  @media screen and (max-width: 550px) {
+    label {
+      display: block;
+      position: absolute;
+      top: 39px;
+      left: 5px;
+    }
+    .box {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 5px;
+    }
+    .homecontainer header {
+        height: 500px;
+    }
+    header {
+      padding: 3px;
+    } 
+    header .headsection {
+      display: none;
+    }
+    header .search {
+        width: 150px;
+
+        div {
+          font-size: 10px;
+        }
+    }
+  
+    input:checked+.box {
+      display: block;
+    }
+  }

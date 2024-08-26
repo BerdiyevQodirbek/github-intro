@@ -1,18 +1,19 @@
 footer {
-  max-width: 100%;
+  width: 100vw;
   height: 20rem;
   position: relative;
+  background-color: lightgray;
 }
 footer .about {
   background-color: black;
-  max-width: 90rem;
+  width: 80vw;
   border: 2px solid white;
   border-radius: 15px;
   display: flex;
   align-items: center;
   height: 8rem;
-  bottom: 310px;
-  left: 130px;
+  bottom: 300px;
+  left: 8rem;
   justify-content: space-around;
   position: absolute;
 }
@@ -42,6 +43,7 @@ footer .title div {
   display: block;
   color: black;
   padding: 10px;
+  background-color: lightgray;
 }
 footer .title div a {
   text-decoration: none;
@@ -59,8 +61,7 @@ footer section p a {
 @media screen and (max-width: 540px) {
   footer .about {
     flex-direction: column;
-    height: 15rem;
-    width: 26rem;
+    height: 27vh;
   }
   footer .title {
     flex-direction: column;
@@ -80,25 +81,26 @@ footer section p a {
   }
 }
 
-main {
-  padding: 50px;
+.product_m {
+  padding: 30px;
+  padding-top: 0;
 }
-main .links {
+.product_m .links {
   padding: 10px;
   gap: 6px;
 }
-main .links a {
+.product_m .links a {
   text-decoration: none;
   color: gray;
 }
-main .links a:hover {
+.product_m .links a:hover {
   color: black;
 }
-main .fa-solid {
+.product_m .fa-angle-up {
   transform: rotate(90deg);
   color: black;
 }
-main .bolimlar {
+.product_m .bolimlar {
   height: 50px;
   border-bottom: 1px solid gray;
   display: flex;
@@ -106,50 +108,51 @@ main .bolimlar {
   align-items: center;
   left: 130px;
 }
-main .bolimlar:active {
+.product_m .bolimlar:active {
   border-bottom: 2px solid black;
 }
-main .bolimlar a {
+.product_m .bolimlar a {
   text-decoration: none;
   color: gray;
 }
-main .bolimlar a:hover {
+.product_m .bolimlar a:hover {
   border-bottom: 2px solid black;
 }
-main .third_section {
+.product_m .third_section {
   display: flex;
   justify-content: space-between;
   height: 50px;
   padding-top: 10px;
 }
-main .all {
+.product_m .all {
   display: flex;
-  gap: 30px;
   padding: 10px;
+  justify-content: space-around;
 }
-main .all .repos {
-  gap: 20px;
+.product_m .all .repos {
   padding: 10px;
   align-items: flex-start;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-main .all .repos .source {
-  width: 500px;
+.product_m .all .repos .source {
+  max-width: 50rem;
   height: 250px;
   border-radius: 15px;
   border: 1px solid rgb(218, 200, 200);
   padding: 20px;
 }
-main .all .repos .source .mark {
+.product_m .all .repos .source .mark {
   display: flex;
   justify-content: space-between;
   padding-right: 6px;
 }
-main .submit {
+.product_m .submit {
   text-align: center;
 }
-main .submit .load {
-  width: 200px;
+.product_m .submit .load {
+  width: 30vw;
   height: 50px;
   border: 1px solid lightcyan;
   border-radius: 30px;
@@ -157,25 +160,31 @@ main .submit .load {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   left: 500px;
 }
-main .inform {
+.product_m .inform {
   display: flex;
   gap: 10px;
+  padding: 10px;
 }
-main .inform h2 span {
+.product_m .inform h2 span {
   text-decoration: line-through;
   color: gray;
 }
-main .inform h4 {
+.product_m .inform h4 {
   color: gray;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-main .inform .price .narx {
+.product_m .inform .price {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product_m .inform .price .narx {
   display: flex;
   align-items: center;
   text-align: center;
   gap: 5px;
 }
-main .inform .price #prosent {
+.product_m .inform .price #prosent {
   display: inline;
   border-radius: 30px;
   border: 1px solid white;
@@ -183,48 +192,48 @@ main .inform .price #prosent {
   background-color: pink;
   color: red;
 }
-main .inform .comfort {
+.product_m .inform .comfort {
   color: gray;
 }
-main .inform nav {
+.product_m .inform nav {
   display: flex;
   gap: 5px;
 }
-main .inform nav .color {
+.product_m .inform nav .color {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: blue;
 }
-main .inform nav .brown {
+.product_m .inform nav .brown {
   background-color: darkred;
 }
-main .inform nav .green {
+.product_m .inform nav .green {
   background-color: darkslategray;
 }
-main .inform nav .violet {
+.product_m .inform nav .violet {
   background-color: darkmagenta;
 }
-main .inform section {
+.product_m .inform section {
   display: flex;
   gap: 5px;
 }
-main .inform section .black_b {
+.product_m .inform section .black_b {
   background-color: black;
   color: white;
 }
-main .inform section button {
+.product_m .inform section button {
   height: 45px;
   width: 90px;
   border: 1px solid white;
   border-radius: 25px;
   background-color: lightgrey;
 }
-main .inform .cart {
+.product_m .inform .cart {
   display: flex;
   gap: 10px;
 }
-main .inform .cart .size {
+.product_m .inform .cart .size {
   height: 45px;
   width: 90px;
   border: 1px solid white;
@@ -235,57 +244,79 @@ main .inform .cart .size {
   display: flex;
   justify-content: space-around;
 }
-main .inform .cart .size a {
+.product_m .inform .cart .size a {
   text-decoration: none;
   color: black;
 }
-main .inform .cart button {
+.product_m .inform .cart button {
   height: 45px;
   width: 300px;
   border-radius: 25px;
   background-color: black;
   color: white;
 }
-main .clothes {
-  border: 1px solid black;
+.product_m .a-cards {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.product_m #a-card {
+  height: 410px;
+  max-width: 15rem;
+  transition: 0.5s;
+}
+.product_m #a-card:hover {
+  transform: scale(1, 1.1);
+}
+.product_m #a-card img {
+  max-width: 15rem;
+}
+.product_m .a-c-stars i {
+  color: #ffc633;
 }
 @media screen and (max-width: 540px) {
-  main .inform {
+  .product_m .inform {
     flex-direction: column;
   }
-  main .inform .cart .size {
+  .product_m .inform .cart .size {
     width: 7rem;
     height: 25px;
   }
-  main .inform .cart .size button {
+  .product_m .inform .cart .size button {
     width: 150;
     height: 25px;
   }
-  main .third_section {
+  .product_m .third_section {
     flex-direction: row;
   }
-  main .third_section .menu {
+  .product_m .third_section .menu {
     flex-direction: row;
   }
-  main .third_section .menu img {
+  .product_m .third_section .menu img {
     width: 3rem;
     height: 25px;
   }
 }
 @media screen and (max-width: 500px) {
-  main .all {
+  .product_m .all {
     flex-direction: column;
+    gap: 0;
   }
-}
-main .repos {
-  width: 200px;
-}
-main .repos .source {
-  width: 300px;
-  height: 180px;
-}
-main .repos .source .mark {
-  width: auto;
+  .product_m .repos {
+    width: 200px;
+  }
+  .product_m .repos .source {
+    width: 300px;
+    height: 180px;
+  }
+  .product_m .repos .source .mark {
+    width: auto;
+  }
+  .product_m .a-cards {
+    padding: 2px;
+    margin: auto;
+  }
 }
 
 main {
@@ -346,10 +377,6 @@ main .maininformation .numbers div h2 {
 @media screen and (max-width: 550px) {
   main {
     flex-direction: column;
-  }
-  main .mainimg :nth-child(1) {
-    width: 400px;
-    height: 500px;
   }
 }
 header {
@@ -670,6 +697,4 @@ label {
 
 .homecontainer {
   padding: 30px 30px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
-main {
-    padding: 50px;
+.product_m {
+    padding: 30px;
+    padding-top: 0;
 
     .links {
         padding: 10px;
@@ -15,7 +16,7 @@ main {
         }
     }
 
-    .fa-solid {
+    .fa-angle-up {
         transform: rotate(90deg);
         color: black;
     }
@@ -54,17 +55,19 @@ main {
 
     .all {
         display: flex;
-        gap: 30px;
+      
         padding: 10px;
-
+         justify-content: space-around;
         .repos {
-            gap: 20px;
+           
             padding: 10px;
             align-items: flex-start;
-            display: block;
-
+            display:flex;
+            flex-direction: column;
+            gap: 30px;
+  
             .source {
-                width: 500px;
+               max-width: 50rem;
                 height: 250px;
                 border-radius: 15px;
                 border: 1px solid rgb(218, 200, 200);
@@ -82,8 +85,9 @@ main {
     .submit {
         text-align: center;
 
+
         .load {
-            width: 200px;
+            width: 30vw;
             height: 50px;
             border: 1px solid lightcyan;
             border-radius: 30px;
@@ -98,6 +102,8 @@ main {
     .inform {
         display: flex;
         gap: 10px;
+        padding: 10px;
+        
 
         h2 span {
             text-decoration: line-through;
@@ -110,6 +116,9 @@ main {
         }
 
         .price {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             .narx {
                 display: flex;
                 align-items: center;
@@ -208,9 +217,36 @@ main {
 
     }
 
-    .clothes {
-        border: 1px solid black;
+    // .clothes {
+    //     border: 1px solid black;
+
+    // }
+    .a-cards{
+        display: flex;
+        gap: 5px;
+        padding: 10px;
+        flex-wrap: wrap;
+        
     }
+    #a-card {
+        
+       height: 410px;
+       max-width: 15rem;
+    
+     transition: 0.5s;
+     &:hover{
+       
+        transform: scale(1,1.1);
+     }
+        img{
+            max-width: 15rem;
+            
+        }
+        
+      }
+      .a-c-stars i {
+        color: #ffc633;
+      }
 
     @media screen and (max-width:540px) {
         .inform {
@@ -244,19 +280,25 @@ main {
     @media screen and (max-width:500px) {
         .all {
             flex-direction: column;
+            gap: 0;
         }
-    }
-
-    .repos {
-        width: 200px;
-
-        .source {
-            width: 300px;
-            height: 180px;
-
-            .mark {
-                width: auto;
+        .repos {
+            width: 200px;
+    
+            .source {
+                width: 300px;
+                height: 180px;
+    
+                .mark {
+                    width: auto;
+                }
             }
         }
+        .a-cards{
+           
+            padding: 2px;
+            margin: auto;
+        }
     }
+
 }
